@@ -1,8 +1,29 @@
 ---
 layout: default
-title: Hank Quinlan, Horrible Cop
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+
+<h1>about.</h1>
+
+<p>Hi, I'm Yuriy, a GIS developer living and working in Toronto.</p>
+
+<p>Professionally, I aim to work in industries that require me to negotiate aggressive learning curves. This has lead me to learn quite a bit about open source GIS, satellite imagery analysis, LiDAR workflows, catastrophe modeling, and most recently web app development.</p>
+
+<p>More importantly, this philosophy has allowed me to meet some pretty cool folks/communities, and i'm pretty happy about that.</p>
+
+<br></br>
+
+<h1>previously.</h1>
+
+<div class="blog-index">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      </li>
+    {% endfor %}
+  </ul>
+</div>

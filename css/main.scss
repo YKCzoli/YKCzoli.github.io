@@ -1,0 +1,122 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+.center-image {
+  margin: 0 auto;
+  display: block;
+  height: 500px;
+}
+
+.centro {
+  margin: auto;
+  max-width: 650px;
+  padding-left: 80px;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(170,170,170,0.4);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  //padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  //margin: 50px 0 0 0;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  //top: -20%;
+  left: 0%;
+  padding: 0px;
+}
+
+// Our variables
+$base-font-family: Avenir;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$blue-color: #0066cc;
+
+$spacing-unit:     30px;
+
+$link-color:       #A6373F;
+
+$text-color:       #373737;
+$background-color: #FFFFFD;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #808080;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "bootstrap/variables",
+        "bootstrap/mixins",
+        "bootstrap/grid",
+        "bootstrap/utilities",
+        "bootstrap/responsive-utilities"
+;
