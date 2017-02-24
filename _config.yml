@@ -12,7 +12,7 @@ port: 8009
 sass:
   style: :compressed
 
-highlighter: pygments
+highlighter: rouge
 
 collections:
   projects:
