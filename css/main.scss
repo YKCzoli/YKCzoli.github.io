@@ -69,13 +69,14 @@
 $base-font-family: Avenir;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 2;
 
 $blue-color: #0066cc;
 
 $spacing-unit:     30px;
 
-$link-color:       #A6373F;
+//$link-color:       #A6373F;
+$link-color:       #ff6600;
 
 $text-color:       #373737;
 $background-color: #FFFFFD;
@@ -105,6 +106,10 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+hr {
+  border-color: $link-color;
 }
 
 
