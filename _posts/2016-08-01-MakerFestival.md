@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Maker Festival Toronto"
-date:   2017-02-19
+date:   2016-08-01
 categories: written_thoughts
 ---
 
-A few months back I was able to showcase the [AR sandbox](http://yuriyczoli.com/written_thoughts/2017/02/19/MakerFestival.html) i assembled at the [Toronto Maker Festival](http://makerfestival.ca/). Here is what the experience taught me:
+A few months back I was able to showcase the [AR sandbox](http://yuriyczoli.com/projects/arSandbox/) i assembled at the [Toronto Maker Festival](http://makerfestival.ca/). Here is what the experience taught me:
 
 ### The Maker community in Toronto is massive
 

@@ -5,7 +5,7 @@ title:  "augmented reality sandbox"
 permalink: /projects/:path/
 ---
 
-#augmented reality sandbox
+# augmented reality sandbox
 
 AR sandboxes are the most hands-on, intuitive models of topography i have come across. Here is a video of my nephews using the sandbox:
 

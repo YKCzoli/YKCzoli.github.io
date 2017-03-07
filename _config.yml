@@ -21,12 +21,6 @@ collections:
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
-url: "http://localhost:8000" # the base hostname & protocol for your site
-
-twitter_username: YKCzoli
-
-github_username:  YKCzoli
-
 # Build settings
 
 markdown: kramdown
