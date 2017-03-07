@@ -1,5 +1,5 @@
 ---
-thumbnail-path: /assets/makerFestival.JPG
+thumbnail-path: /assets/makerFestival.jpg
 layout: default
 title:  "augmented reality sandbox"
 permalink: /projects/:path/
