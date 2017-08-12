@@ -5,11 +5,11 @@ date:   2017-03-25
 categories: written_thoughts
 ---
 
-When working with scanned aerial imagery, I often come across a portion of the image that isn't map friendly. This area is typically the border around the scanned image. This post will step through how to remove this unwanted area by isolating pixels based on their value. I assume you are familiar with [QGIS](http://www.qgis.org/en/site/), [GDAL](http://www.gdal.org/), and the command line.
+When working with scanned aerial imagery, I often come across a portion of the image that isn't map friendly. This area is typically the border around the scanned image. This post will step through how to remove this unwanted area by isolating pixels based on their value. I assume you are familiar with [QGIS](http://www.qgis.org/en/site/){:target="_blank"}, [GDAL](http://www.gdal.org/){:target="_blank"}, and the command line.
 
 ### Download and view imagery
 
-The University of Toronto Map & Data Library holds a [great collection](https://mdl.library.utoronto.ca/collections/air-photos/air-photo-collection-listing) of aerial imagery from all over Canada. We will work with some imagery covering [Toronto from 1947](https://mdl.library.utoronto.ca/air-photos/1947).
+The University of Toronto Map & Data Library holds a [great collection](https://mdl.library.utoronto.ca/collections/air-photos/air-photo-collection-listing){:target="_blank"} of aerial imagery from all over Canada. We will work with some imagery covering [Toronto from 1947](https://mdl.library.utoronto.ca/air-photos/1947){:target="_blank"}.
 
 Pick any four connected scenes to download. I chose these four:
 
@@ -34,7 +34,7 @@ Any pixel in the image that whose value matches the no data value will be transp
 
 ### Data Type
 
-The data type tells us the range of values we can expect in our data. In the GIS industry you may see this referred to as [radiometric resolution](http://www.nrcan.gc.ca/node/9379). These images are 8 bit unsigned integer. For our purposes this means the values will range from 0 to 255.
+The data type tells us the range of values we can expect in our data. In the GIS industry you may see this referred to as [radiometric resolution](http://www.nrcan.gc.ca/node/9379){:target="_blank"}. These images are 8 bit unsigned integer. For our purposes this means the values will range from 0 to 255.
 
 ### Identifying unwanted pixels
 
@@ -84,6 +84,6 @@ do
 done
 ```
 
-The variable 'f' is shorthand for 'file'. We are looping through all jpg file types, and running [gdal_calc.py](http://www.gdal.org/gdal_calc.html) on the file. -A is the flag for the file name. --A is the flag for which band to use(here we explicitly use band 1). The --calc flag is our raster calculator expression, and we set the noData value to 0.
+The variable 'f' is shorthand for 'file'. We are looping through all jpg file types, and running [gdal_calc.py](http://www.gdal.org/gdal_calc.html){:target="_blank"} on the file. -A is the flag for the file name. --A is the flag for which band to use(here we explicitly use band 1). The --calc flag is our raster calculator expression, and we set the noData value to 0.
 
-This is the same process we applied with the raster calculator, where we substitute GDAL for our UI based approach in QGIS. The benefit of processing the files this way is that we can process the entire repository of imagery with no additional manual work. For an example of how a stitched image covering a large area might look after this process, see the [1954 Toronto map](https://yuriyczoli.com/written_thoughts/2017/03/06/Toronto1954.html).
+This is the same process we applied with the raster calculator, where we substitute GDAL for our UI based approach in QGIS. The benefit of processing the files this way is that we can process the entire repository of imagery with no additional manual work. For an example of how a stitched image covering a large area might look after this process, see the [1954 Toronto map](https://yuriyczoli.com/written_thoughts/2017/03/06/Toronto1954.html){:target="_blank"}.

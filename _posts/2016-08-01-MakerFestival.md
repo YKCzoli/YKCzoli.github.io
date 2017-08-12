@@ -5,11 +5,11 @@ date:   2016-08-01
 categories: written_thoughts
 ---
 
-A few months back I was able to showcase the [AR sandbox](http://yuriyczoli.com/projects/arSandbox/) i assembled at the [Toronto Maker Festival](http://makerfestival.ca/). Here is what the experience taught me:
+A few months back I was able to showcase the [AR sandbox](http://yuriyczoli.com/projects/arSandbox/){:target="_blank"} i assembled at the [Toronto Maker Festival](http://makerfestival.ca/){:target="_blank"}. Here is what the experience taught me:
 
 ### The Maker community in Toronto is massive
 
-It's impressive to see how many creative projects requiring building/assembling/making are happening in Toronto. This includes variety, from robots to 3D printing to art installations (See all projects [here](http://makerfestival.ca/extravaganza/)). The educational potential of this community is incredible as well. There were hundreds of kids learning how to assemble parts, solder, and generally learn by doing.
+It's impressive to see how many creative projects requiring building/assembling/making are happening in Toronto. This includes variety, from robots to 3D printing to art installations (See all projects [here](http://makerfestival.ca/extravaganza/){:target="_blank"}). The educational potential of this community is incredible as well. There were hundreds of kids learning how to assemble parts, solder, and generally learn by doing.
 
 ### Most common question
 
