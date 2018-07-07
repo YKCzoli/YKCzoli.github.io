@@ -1,7 +1,7 @@
 ---
 thumbnail-path: /assets/cdem.JPG
 layout: post
-title:  "Canadian Digital Elevation Model"
+title:  "Canadian Digital Elevation Model Visualization"
 permalink: /projects/:path/
 ---
 
